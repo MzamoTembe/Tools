@@ -1,0 +1,7 @@
+[user]
+	name = Mzamo Tembe
+	email = mzamotembe7@gmail.com
+[core]
+	editor = lvim
+[credential]
+	helper = osxkeychain

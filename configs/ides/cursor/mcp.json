@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "awslabs.cdk-mcp-server": {
+      "command": "uvx awslabs.cdk-mcp-server@latest",
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": [],
+      "args": []
+    },
+    "Postman": {
+      "url": "https://mcp.postman.com/minimal",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY"
+      }
+    },
+    "AWS Documentation": {
+      "command": "uvx awslabs.aws-documentation-mcp-server@latest",
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_DOCUMENTATION_PARTITION": "aws"
+      },
+      "args": []
+    },
+    "Chrome DevTools": {
+      "command": "npx chrome-devtools-mcp@latest",
+      "env": {},
+      "args": []
+    },
+    "Netlify": {
+      "command": "npx -y @netlify/mcp",
+      "env": {},
+      "args": []
+    },
+    "Figma": {
+      "url": "https://mcp.figma.com/mcp",
+      "headers": {}
+    },
+    "Context7": {
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {}
+    },
+    "awslabs.aws-api-mcp-server": {
+      "command": "uvx awslabs.aws-api-mcp-server@latest",
+      "env": {
+        "AWS_REGION": "us-east-1"
+      },
+      "disabled": false,
+      "autoApprove": [],
+      "args": []
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "kiroAgent.agentModelSelection": "claude-sonnet-4",
+  "kiroAgent.agentAutonomy": "Supervised",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.useCtrlKeys": false,
+  "vim.leader": "<space>",
+  "vim.surround": true,
+  "vim.commentary": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": ["vspacecode.space", {"command": "whichkey.triggerKey", "args": "m"}]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": ["vspacecode.space", {"command": "whichkey.triggerKey", "args": "m"}]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "claudeCode.preferredLocation": "panel",
+  "aws.cloudformation.telemetry.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "relative",
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.snippetSuggestions": "none",
+  "editor.experimentalGpuAcceleration": "on",
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/CVS": true,
+    "build": false,
+    "env": true
+  },
+  "files.watcherExclude": {
+    "**/build/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true
+  },
+  "search.exclude": {
+    "env": true,
+    "build": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "workbench.colorTheme": "Nord",
+  "workbench.iconTheme": "vs-minimal",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.panel.showLabels": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "update.showReleaseNotes": false,
+  "problems.showCurrentInStatus": false,
+  "vspacecode.sortOrder": "alphabetically",
+  "vspacecode.delay": 0,
+  "vspacecode.showButtons": false,
+  "vspacecode.showIcons": true,
+  "vspacecode.showKeybindings": true,
+  "vspacecode.bindingOverrides": [],
+  "kiroAgent.notifications.agent.actionRequired": false,
+  "kiroAgent.notifications.billing": false,
+  "kiroAgent.mcpApprovedEnvVars": [
+    "POSTMAN_API_KEY"
+  ]
+}

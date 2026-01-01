@@ -120,11 +120,6 @@ alias python=python3
 alias pip=pip3
 alias vim="lvim"
 alias vi="lvim"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 VI_MODE_SET_CURSOR=true
@@ -134,5 +129,14 @@ VI_MODE_SET_CURSOR=true
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+export PATH="/opt/homebrew/opt/dotnet@6/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export CODEX_HOME=/Users/mzamo/workplace/binmo/binmo/.codex

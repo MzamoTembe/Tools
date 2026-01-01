@@ -1,0 +1,18 @@
+{
+  "mcpServers": {},
+  "powers": {
+    "mcpServers": {
+      "power-postman-postman": {
+        "url": "https://mcp.postman.com/minimal",
+        "headers": {
+          "Authorization": "Bearer ${POSTMAN_API_KEY}"
+        }
+      },
+      "power-figma-figma": {
+        "url": "https://mcp.figma.com/mcp",
+        "disabled": false,
+        "disabledTools": []
+      }
+    }
+  }
+}
