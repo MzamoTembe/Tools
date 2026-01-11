@@ -1,0 +1,6 @@
+{
+  "autocomplete.fuzzySearch": true,
+  "autocomplete.onlyShowOnTab": false,
+  "autocomplete.theme": "system",
+  "mcp.loadedBefore": true
+}

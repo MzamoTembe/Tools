@@ -101,5 +101,7 @@
   "kiroAgent.notifications.billing": false,
   "kiroAgent.mcpApprovedEnvVars": [
     "POSTMAN_API_KEY"
-  ]
+  ],
+  "gitlens.views.launchpad.avatars": false,
+  "python.languageServer": "Jedi"
 }

@@ -16,6 +16,7 @@ mkdir -p "$DEST_ROOT/development/amazon-configs"
 mkdir -p "$DEST_ROOT/terminal/tmux"
 mkdir -p "$DEST_ROOT/ides/cursor"
 mkdir -p "$DEST_ROOT/ides/windsurf"
+mkdir -p "$DEST_ROOT/ai/claude/rules"
 
 cp ~/.vimrc "$DEST_ROOT/editors/vim/vanilla/" 2>/dev/null
 cp ~/.zshrc "$DEST_ROOT/shells/zsh/" 2>/dev/null
@@ -44,3 +45,6 @@ cp ~/.windsurf/extensions/extensions.json "$DEST_ROOT/ides/windsurf/extensions.j
 cp "$HOME/Library/Application Support/Windsurf/User/settings.json" "$DEST_ROOT/ides/windsurf/settings.json" 2>/dev/null
 cp "$HOME/Library/Application Support/Windsurf/User/keybindings.json" "$DEST_ROOT/ides/windsurf/keybindings.json" 2>/dev/null
 cp ~/.aws/config "$DEST_ROOT/development/amazon-configs/aws-config" 2>/dev/null
+cp ~/.claude/CLAUDE.md "$DEST_ROOT/ai/claude/" 2>/dev/null
+cp ~/.claude/settings.json "$DEST_ROOT/ai/claude/" 2>/dev/null
+cp -R ~/.claude/rules/* "$DEST_ROOT/ai/claude/rules/" 2>/dev/null
